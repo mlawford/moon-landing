@@ -21,7 +21,7 @@
 
 
 .landing-title{
-  display: inline-block;
+  display: flex;
   text-align: left;
   font-family: 'Tuno';
   color: var(--black);
@@ -29,31 +29,41 @@
   margin-left: 5%;
 }
 
+.nav-flex-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+  margin-left: 5%;
+}
+
+.logo-flex-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 5%;
+}
 
 .hex-logo{
-  position: absolute;
-  left: 1%;
-  top: 8%;
-  height: 15%;
-  width: 15%;
+  display: flex;
+  height: 8%;
+  width: 8%;
   z-index: 2;
   animation: hex-logo-spin 15s linear infinite;
 }
 
+
 .hex-logo-orbit{
-  position: absolute;
-  left: 5%;
-  top: 13%;
-  height: 5%;
-  width: 5%;
+  display: flex;
+  height: 2%;
+  margin-top: -6%;
+  margin-left: 3%;
+  width: 2%;
   z-index: 2;
   animation: myOrbit 15s linear infinite;
 }
 
 .about-menu{
-  position: absolute;
-  left: 5%;
-  top: 30%;
+  display: flex;
   text-align: left;
   opacity: 0;
   font-family: 'Tuno';
@@ -63,13 +73,27 @@
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-  z-index: 2
+  z-index: 2;
+  transition: all 0.2s ease-in
+}
+
+.about-menu:hover{
+  font-size: 30px;
+  color: var(--red);
+}
+
+.projects-menu:hover{
+  font-size: 30px;
+  color: var(--yellow);
+}
+
+.contact-menu:hover{
+  font-size: 30px;
+  color: var(--blue);
 }
 
 .projects-menu{
-  position: absolute;
-  left: 5%;
-  top: 35%;
+  display: flex;
   text-align: left;
   opacity: 0;
   font-family: 'Tuno';
@@ -79,13 +103,12 @@
   animation-duration: 1s;
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
-  z-index: 2
+  z-index: 2;
+  transition: all 0.2s ease-in
 }
 
 .contact-menu{
-  position: absolute;
-  left: 5%;
-  top: 40%;
+  display: flex;
   text-align: left;
   opacity: 0;
   font-family: 'Tuno';
@@ -95,30 +118,16 @@
   animation-duration: 1s;
   animation-delay: 4s;
   animation-fill-mode: forwards;
-  z-index: 2
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
 }
 
-.landing-bg{
-  display: inline-block;
-  background-color: var(--blue);
-  height: 5%;
-  margin-left: 5%;
-  animation-name: landing-bg-slide;
-  animation-duration: 0.75s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.landing-bg-2{
-  display: inline-block;
-  margin-top: -3%;
-  background-color: var(--blue);
-  height: 5%;
-  margin-left: 5%;
-  animation-name: landing-bg-slide-2;
-  animation-duration: 0.75s;
-  animation-delay: 1.25s;
-  animation-fill-mode: forwards;
+.gradient-bar{
+  display: flex;
+  width: 50%;
+  height: 50%;
+  background-color: var(--red);
+  z-index: 3;
 }
 
 .orb{
@@ -155,13 +164,11 @@
 }
 
 .title-fade-in{
-  position: absolute;
-  left: 38%;
-  top: 38%;
-  text-align: center;
+  display: flex;
+  text-align: left;
   opacity: 0;
   font-family: 'Tuno';
-  font-size: 128px;
+  font-size: 64px;
   color: white;
   animation-name: main-text-fade-in;
   animation-duration: 1s;
@@ -170,38 +177,45 @@
   z-index: 2
 }
 
-.solar-system-ring{
-  border-radius: 50%;
-  margin: 25%;
-  margin-top: 10%;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: white;
-  width: 50%;
-  height: 75%;
+.title-fade-in-2{
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 64px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  z-index: 2
 }
 
-.jupiter{
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: var(--red);
-  width: 25%;
-  height: 20%;
+.title-fade-in-3{
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 64px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  z-index: 2
 }
 
-.sun{
-  position: fixed;
-  left: 42%;
-  top: 40%;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: var(--yellow);
-  width: 15%;
-  height: 20%;
+.flex-title-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-top: -17%;
 }
 
+.flex-box{
+  display: flex;
+  flex-direction: row;
+}
 
 @keyframes hex-logo-spin{
     from {transform: rotate(0deg);}
@@ -209,8 +223,8 @@
 }
 
 @keyframes main-text-fade-in{
-    0%    {opacity: 0}
-    100%  {opacity: 1}
+    from    {opacity: 0}
+    to {opacity: 1}
 }
 
 @keyframes orb-explosion{
@@ -221,6 +235,11 @@
 @keyframes orb-move{
     0%   {}
     100%{top:0%;}
+}
+
+@keyframes to-black{
+    0%   {fill: #000000}
+    100%{fill:#ffffff;}
 }
 
 @keyframes landing-bg-slide {
@@ -234,21 +253,21 @@
 }
 
 @-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(85px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(85px) rotate(-360deg); }
+    from { -webkit-transform: rotate(0deg) translateX(380%) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
 }
 
 @-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(85px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(85px) rotate(-360deg); }
+    from { -moz-transform: rotate(0deg) translateX(380%) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
 }
 
 @-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(85px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(85px) rotate(-360deg); }
+    from { -o-transform: rotate(0deg) translateX(380%) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(85px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(85px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(380%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(380%) rotate(-360deg); }
 }
