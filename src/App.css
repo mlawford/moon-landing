@@ -51,7 +51,6 @@
   animation: hex-logo-spin 15s linear infinite;
 }
 
-
 .hex-logo-orbit{
   display: flex;
   height: 2%;
@@ -205,6 +204,107 @@
   z-index: 2
 }
 
+.about-fade-in{
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 64px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 2
+}
+
+.about-fade-in-2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 128px;
+  width: 128px;
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 24px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  background-image: url('https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-fade-in-3{
+  display: flex;
+  width: 60%;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 24px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  word-wrap: break-word;
+}
+.projects-fade-in{
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 64px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 2
+}
+
+.projects-fade-in-2{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 128px;
+  width: 128px;
+  display: flex;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 24px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  background-image: url('https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-fade-in-3{
+  display: flex;
+  width: 60%;
+  text-align: left;
+  opacity: 0;
+  font-family: 'Tuno';
+  font-size: 24px;
+  color: white;
+  animation-name: main-text-fade-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+  word-wrap: break-word;
+}
+
 .flex-title-container{
   display: flex;
   flex-direction: column;
@@ -254,20 +354,20 @@
 
 @-webkit-keyframes myOrbit {
     from { -webkit-transform: rotate(0deg) translateX(380%) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
+    to   { -webkit-transform: rotate(-360deg) translateX(380%) rotate(360deg); }
 }
 
 @-moz-keyframes myOrbit {
     from { -moz-transform: rotate(0deg) translateX(380%) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
+    to   { -moz-transform: rotate(-360deg) translateX(380%) rotate(0360deg); }
 }
 
 @-o-keyframes myOrbit {
     from { -o-transform: rotate(0deg) translateX(380%) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(380%) rotate(-360deg); }
+    to   { -o-transform: rotate(-360deg) translateX(380%) rotate(360deg); }
 }
 
 @keyframes myOrbit {
     from { transform: rotate(0deg) translateX(380%) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(380%) rotate(-360deg); }
+    to   { transform: rotate(-360deg) translateX(380%) rotate(360deg); }
 }
