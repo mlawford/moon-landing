@@ -10,9 +10,18 @@ class RandomFact extends Component {
       }
   }
 
-  setInterval(function(){
-    console.log('CHANGE');
-  },1000)
+  componentDidMount(){
+    setInterval(function(){
+      this.changeFactText()
+    },5000)
+  }
+
+  changeFactText = () => {
+    this.setState({
+      factText: "NEW"
+    })
+  }
+
 
   render() {
     return (
