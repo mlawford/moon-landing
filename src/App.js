@@ -6,6 +6,7 @@ import HomePage from './HomePage.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import Projects from './Projects.js';
+import RandomFact from './RandomFact.js';
 import hexMini from './mpvl-mini.svg';
 import octopus from './octopus-01.svg'
 import './App.css';
@@ -39,6 +40,7 @@ class App extends Component {
   }
 
   renderProjects = () => {
+    console.log(this.state);
     this.setState({
        page: "projects"
     })
@@ -77,6 +79,9 @@ class App extends Component {
             </div>
           </div>
           {this.renderSwitch(this.state.page)}
+        </div>
+        <div className="footer">
+          Are you aware that: <RandomFact/>
         </div>
       </div>
     );

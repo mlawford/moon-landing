@@ -17,11 +17,11 @@ class About extends Component {
           About
         </div>
 
-        <div className="about-fade-in-2">
+        <div className="about-fade-in-main-photo">
         </div>
 
         <div className="about-fade-in-3">
-          kjsbdfjbsjkdfbskdbfksjdbfkjsdbfjkbs;uefuuseibfsjdkfbs ejfskjebfjsebfsbdfmnsejhbfnsdfmns dfeshbfnsd jfehsf nmd fnsehfs ekhfsnkef sejnfsbe fuuuuuuuuuuu uuucccckkkk
+          lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim lipsim fucksim
         </div>
 
       </div>

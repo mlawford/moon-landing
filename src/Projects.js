@@ -13,15 +13,20 @@ class Projects extends Component {
   render() {
     return (
       <div className="flex-title-container">
-        <div className="project-fade-in">
+        <div className="projects-fade-in">
           Projects
         </div>
 
-        <div className="project-fade-in-2">
+        <div className="projects-fade-in-2">
+          Placeholder 1
         </div>
 
-        <div className="project-fade-in-3">
+        <div className="projects-fade-in-3">
+          Placeholder 2
+        </div>
 
+        <div className="projects-fade-in-4">
+          Placeholder 3
         </div>
 
       </div>

@@ -13,9 +13,16 @@ class Contact extends Component {
   render() {
     return (
       <div className="flex-title-container">
-        <div className="title-fade-in">
+        <div className="contact-fade-in">
           Contact
         </div>
+
+        <div className="contact-fade-in-2">
+        </div>
+
+        <div className="contact-fade-in-3">
+        </div>
+
       </div>
     );
   }
