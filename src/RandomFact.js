@@ -9,12 +9,12 @@ class RandomFact extends Component {
         factText: ""
       }
   }
-
-  componentDidMount(){
-    setInterval(function(){
-      this.changeFactText()
-    },5000)
-  }
+  //
+  // componentDidMount(){
+  //   setInterval(function(){
+  //     this.changeFactText()
+  //   },5000)
+  // }
 
   changeFactText = () => {
     this.setState({
@@ -26,7 +26,6 @@ class RandomFact extends Component {
   render() {
     return (
       <div>
-        {this.state.factText}
       </div>
     );
   }

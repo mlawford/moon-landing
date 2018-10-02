@@ -8,6 +8,7 @@ import Contact from './Contact.js';
 import Projects from './Projects.js';
 import RandomFact from './RandomFact.js';
 import hexMini from './mpvl-mini.svg';
+import hexMini2 from './mpvl-mini2.svg';
 import octopus from './octopus-01.svg'
 import './App.css';
 
@@ -59,7 +60,8 @@ class App extends Component {
 
         <div className="orb">
         </div>
-        <div className="orb2">
+
+        <div id="orb-bg" className="orb2">
         </div>
         <div className="flex-container">
           <div className="logo-flex-container">
@@ -68,19 +70,20 @@ class App extends Component {
           </div>
 
           <div className="nav-flex-container">
-            <div className="about-menu" onClick={this.renderAbout}>
+            <div id="about"className="about-menu" onClick={this.renderAbout}>
               about
             </div>
-            <div className="projects-menu" onClick={this.renderProjects}>
+            <div id="projects" className="projects-menu" onClick={this.renderProjects}>
               projects
             </div>
-            <div className="contact-menu" onClick={this.renderContact}>
+            <div id="contact" className="contact-menu" onClick={this.renderContact}>
               contact
             </div>
           </div>
           {this.renderSwitch(this.state.page)}
         </div>
         <div className="footer">
+
           Are you aware that: <RandomFact/>
         </div>
       </div>

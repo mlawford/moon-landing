@@ -12,7 +12,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="flex-title-container">
+      <div id="title-container"className="flex-title-container">
         <div className="title-fade-in">
           Hi,
         </div>

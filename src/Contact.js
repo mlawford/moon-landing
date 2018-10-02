@@ -12,17 +12,23 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="flex-title-container">
-        <div className="contact-fade-in">
-          Contact
+      <div>
+        <div className="orb-blue">
         </div>
-
-        <div className="contact-fade-in-2">
+        <div className="orb2-blue">
         </div>
+        <div className="flex-title-container">
+          <div className="contact-fade-in">
+            Contact
+          </div>
 
-        <div className="contact-fade-in-3">
+          <div className="contact-fade-in-2">
+          </div>
+
+          <div className="contact-fade-in-3">
+          </div>
+
         </div>
-
       </div>
     );
   }
